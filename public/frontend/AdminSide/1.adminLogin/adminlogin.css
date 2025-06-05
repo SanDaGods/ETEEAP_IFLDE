@@ -195,7 +195,7 @@ body {
   font-size: 14px; /* Smaller font size */
   display: block; /* Block layout for spacing */
   text-align: right; /* Center align text */
-  margin-top: 20px; /* Space above the link */
+  margin-top: 10px; /* Space above the link */
   color: #4C308F; /* Purple text */
   text-decoration: none;
   
@@ -261,6 +261,17 @@ body {
     .toggle-password:hover {
       color: #000;
     }  
+
+    .register-link a {
+  text-decoration: none;     /* Remove underline */
+  color: #007bff;            /* Bootstrap-style blue (optional) */
+  font-weight: 500;          /* Slightly bold */
+  transition: color 0.2s;
+}
+
+.register-link a:hover {
+  color: #0056b3;            /* Darker blue on hover (optional) */
+}
 
 /* Responsive styling for smaller screens */
 @media (max-width: 768px) {
