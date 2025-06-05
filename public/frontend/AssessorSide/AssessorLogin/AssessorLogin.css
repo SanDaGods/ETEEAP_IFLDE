@@ -177,8 +177,8 @@ body {
   border-radius: 6px; /* Rounded corners */
   background-color: #fdfdfd; /* Light gray background */
   margin-top: 8px; /* Space above the input */
-  color: #bcbcbc; /* Gray placeholder text */
-  text-align: center; /* Centers text inside input */
+  color: #000000; /* Gray placeholder text */
+  text-align: left; /* Centers text inside input */
   padding: 10px; /* Padding inside input */
   border: 1px solid #ccc; /* Light gray border */
   width: 100%; /* Full width */
@@ -234,6 +234,23 @@ body {
 .google-text {
   font-size: 14px; /* Medium font size */
 }
+
+/* Style for the toggle password icon */
+#togglePassword {
+  position: absolute;
+  right: 10px;
+  top: 70%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+}
+
+#togglePassword:hover {
+  color: #4C308F; /* Optional: match your theme color on hover */
+}
+
 
 /* Responsive styling for smaller screens */
 @media (max-width: 768px) {

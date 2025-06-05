@@ -30,7 +30,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 // MongoDB Connection
-mongoose.connect("mongodb://127.0.0.1:27017/Eteeap", {
+mongoose.connect("mongodb+srv://jedhishere:todajedh0611@cluster0.rg77uij.mongodb.net/Eteeap?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -2349,7 +2349,7 @@ app.use((err, req, res, next) => {
 // Start Server
 app.listen(PORT, () => {
   console.log(`🚀 Server running at http://localhost:${PORT}`);
-  console.log(`📁 MongoDB collections:`);
+  console.log(`📁 MongoDB collections connected:`);
   console.log(`- Eteeap.Applicants`);
   console.log(`- Eteeap.Assessors`);
   console.log(`- Eteeap.AssessorCounters`);

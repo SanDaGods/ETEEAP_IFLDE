@@ -86,3 +86,21 @@ function showError(fieldId, message) {
   error.textContent = message;
   field.insertAdjacentElement('afterend', error);
 }
+
+ document.addEventListener("DOMContentLoaded", () => {
+      const passwordInput = document.getElementById("password");
+      const togglePassword = document.getElementById("togglePassword");
+
+      togglePassword.addEventListener("click", () => {
+        const isPassword = passwordInput.type === "password";
+        passwordInput.type = isPassword ? "text" : "password";
+        togglePassword.querySelector("ion-icon").setAttribute("name", isPassword ? "eye-off" : "eye");
+      });
+
+      togglePassword.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          togglePassword.click();
+        }
+      });
+    });
